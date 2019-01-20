@@ -31,7 +31,7 @@ public class Weapon : BringableObject
 
     public override void Use(Actor actor)
     {
-        var transform1 = actor.hand.transform;
+        var transform1 = actor.transform;
         RaycastHit[] hits = Physics.RaycastAll
             (transform1.position, transform1.forward);
            

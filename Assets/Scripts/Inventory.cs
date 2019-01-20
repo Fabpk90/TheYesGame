@@ -12,6 +12,9 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         index = 0;
+        
+        var objects = GetComponentsInChildren<BringableObject>(true);
+        objs.AddRange(objects);
     }
     
     public void AddObj(BringableObject obj)
